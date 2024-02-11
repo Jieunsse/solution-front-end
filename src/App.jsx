@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       {/*<Routes><Route path="/" element={} /></Routes>*/}
-      <div>솔챌을 위한 보일러 플레이트</div>
+      <p className="text-blue-400">솔챌을 위한 보일러 플레이트</p>
     </>
   );
 }
