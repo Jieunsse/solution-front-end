@@ -1,0 +1,95 @@
+.page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
+
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: #f7f7f7;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.titleWrap {
+    margin-top: 80%;
+    font-size: 26px;
+    font-weight: 700;
+    color: #262626;
+    text-align: center;
+}
+
+.contentWrap {
+    margin-top: 10%;
+    flex: 1;
+}
+
+.inputIdTitle{
+    font-size: 12px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.inputPwdTitle {
+    font-size: 12px;
+    font-weight: 600;
+    color: #262626;
+    margin-top: 26px;
+}
+
+.inputWrap {
+    display: flex;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 8px;
+    background-color: white;
+    border: 1px solid #e2e0c0;
+}
+
+.inputWrap:focus-within {
+   border: 1px solid #1876fb;
+}
+
+.input {
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 17px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.input::placeholder {
+    color: #dadada;
+}
+
+
+.signInButton {
+    width: 100%;
+    height: 48px;
+    border: none;
+    font-weight: 700;
+    background-color: #4285F4;
+    margin-bottom: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+}
+
+
+
+.ImgButton {
+    width: 500px;
+    height: 48px;
+
+    margin-bottom: 90%;
+    cursor: pointer;
+}
+
+
+
