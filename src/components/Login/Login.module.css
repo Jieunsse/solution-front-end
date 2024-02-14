@@ -82,12 +82,10 @@
     margin-bottom: 16px;
     cursor: pointer;
     border-radius: 3px;
-}
-
-.signInButton:disabled {
-    background-color: #dadada;
     color: white;
 }
+
+
 
 
 
