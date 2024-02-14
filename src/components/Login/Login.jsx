@@ -36,27 +36,19 @@ const Login = () => {
                     <input className={styles.input} placeholder="test@gmail.com"  />
                 </div>
 
-                {/*<div className={styles.errorMessageWrap}>*/}
-                {/*    Please check your ID.*/}
-                {/*</div>*/}
+
 
                 <div className={styles.inputPwdTitle}>Password</div>
                 <div className={styles.inputWrap}>
                     <input className={styles.input} placeholder="PassWord" type="password"/>
                 </div>
 
-                {/*<div className={styles.errorMessageWrap}>*/}
-                {/*    Please check your PassWord.*/}
-                {/*</div>*/}
+
             </div>
+
             <div>
-                <button className={styles.signInButton} onClick={handleSignIn}>
-                    Google Login
-                </button>
-            </div>
-            <div>
-                <button className={styles.signInButton}  >
-                    Sign In
+                <button onClick={handleSignIn}>
+                    <img src="/src/assets/Google/button.svg" alt="구글 로그인 버튼" className={styles.ImgButton}/>
                 </button>
             </div>
 
