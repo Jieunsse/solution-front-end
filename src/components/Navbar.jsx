@@ -26,7 +26,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="flex top-0 items-center border-b h-12 fixed w-full max-w-md bg-white">
+    <nav className="flex top-0 items-center h-12 fixed w-full max-w-md bg-white">
       <FaBars onClick={handleShow} className="w-12 h-5 absolute" />
       {isOpen && (
         <div
