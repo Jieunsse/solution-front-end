@@ -26,7 +26,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="flex top-0 items-center h-12 fixed w-full max-w-md bg-white">
+    <nav className="flex top-0 items-center h-12 fixed w-full max-w-[500px]">
       <FaBars onClick={handleShow} className="w-12 h-5 absolute" />
       {isOpen && (
         <div
@@ -51,6 +51,9 @@ function Navbar() {
       )}
       <Link to="/" className="flex justify-center flex-1">
         <img src={logo} />
+      </Link>
+      <Link to="/login" className="absolute flex right-4">
+        <button>로그인</button>
       </Link>
     </nav>
   );

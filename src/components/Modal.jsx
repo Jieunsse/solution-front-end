@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function Modal({ message, title, onClose }) {
   return (
-    <div className="fixed top-0 left-0 max-w-md w-full h-full flex justify-center items-center">
+    <div className="fixed top-0 max-w-[500px] w-full h-full flex justify-center items-center">
       <div className="fixed top-0 left-0 w-full h-screen bg-black opacity-50"></div>
       <div className="fixed left-22 bg-white p-6 border border-gray-300 rounded-lg shadow-lg">
         <h1 className="text-xl font-bold mb-4">{title}</h1>
