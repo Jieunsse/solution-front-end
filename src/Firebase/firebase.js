@@ -19,16 +19,3 @@ export const auth = getAuth(firebase);
 const db = getFirestore(firebase);
 
 export default db;
-
-/*
-*
-* apiKey: "AIzaSyDAxf63ROi6CkSb_SIgBCaWEfy7Qr4ddxo",
-    authDomain: "solution-ef28d.firebaseapp.com",
-    projectId: "solution-ef28d",
-    storageBucket: "solution-ef28d.appspot.com",
-    messagingSenderId: "418651655909",
-    appId: "1:418651655909:web:290f32077055e64fa60e0c",
-    measurementId: "G-DNNKNSL7S1"
-*
-*
-* */
