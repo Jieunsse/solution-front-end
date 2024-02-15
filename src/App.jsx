@@ -1,12 +1,15 @@
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 import './styles/normalize.css';
-import { Routes, Route } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      {/*<Routes><Route path="/" element={} /></Routes>*/}
-      <p className="text-blue-400">솔챌을 위한 보일러 플레이트</p>
-    </>
+    <div className="max-w-md h-screen border">
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </div>
   );
 }
 
