@@ -14,9 +14,11 @@ const Login = () => {
         signInWithPopup(auth, provider)
             .then((data) => {
                 setUserData(data.user);
+                alert("Login success");
             })
             .catch((err) => {
                 console.log(err);
+                alert("Login failed");
             });
     }
 
@@ -46,11 +48,16 @@ const Login = () => {
 
             </div>
 
-            <div>
-                <button onClick={handleSignIn}>
-                    <img src="/src/assets/Google/button.svg" alt="구글 로그인 버튼" className={styles.ImgButton}/>
-                </button>
-            </div>
+
+                <div>
+                    <button onClick={handleSignIn} className={styles.ImgButtonWrap}>
+                        <img src="/src/assets/Google/button.svg" alt="구글 로그인 버튼" className={styles.ImgButton}/>
+                    </button>
+                </div>
+
+                <div className={styles.ButtonWrap}>
+                    <button className={styles.signInButton}> Sign In </button>
+                </div>
 
         </div>
     );
