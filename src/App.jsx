@@ -8,7 +8,7 @@ function App() {
     <div className="max-w-[500px] h-screen border m-auto"  
       style={{
         maxHeight: `calc(100vh - 60px )`,
-        paddingTop: '66px',
+        paddingTop: '86px',
     }}>
       <Navbar />
       <Outlet />
