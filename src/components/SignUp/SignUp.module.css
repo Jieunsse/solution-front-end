@@ -2,20 +2,18 @@
     position: absolute;
     top: 0;
     bottom: 0;
+
     width: 100%;
     max-width: 500px;
     padding: 0 20px;
-
     left: 50%;
+
     transform: translate(-50%, 0%);
     background-color: #f7f7f7;
 
     overflow: hidden;
-
     display: flex;
     flex-direction: column;
-
-
 }
 
 .titleWrap {
@@ -23,22 +21,11 @@
     margin-left: 80px;
 }
 
-.contentWrap {
-    margin-top: 10%;
-    flex: 1;
-}
-
 .inputIdTitle{
     font-size: 12px;
     font-weight: 600;
     color: #262626;
-}
-
-.inputPwdTitle {
-    font-size: 12px;
-    font-weight: 600;
-    color: #262626;
-    margin-top: 26px;
+    margin-top: 30px;
 }
 
 .inputWrap {
@@ -50,10 +37,6 @@
     border: 1px solid #e2e0c0;
 }
 
-.inputWrap:focus-within {
-   border: 1px solid #1876fb;
-}
-
 .input {
     width: 100%;
     outline: none;
@@ -63,12 +46,19 @@
     font-weight: 400;
 }
 
-.input::placeholder {
-    color: #dadada;
+.inputPwdTitle {
+    font-size: 12px;
+    font-weight: 600;
+    color: #262626;
+    margin-top: 26px;
 }
 
+.ButtonWrap {
+    margin-top: 50px;
+    margin-left: 20px;
+}
 
-.signInButton {
+.signUpButton {
     width: 230px;
     height: 46px;
     border: none;
@@ -80,29 +70,3 @@
     border-radius: 3px;
     color: white;
 }
-
-
-.ButtonWrap {
-    position: absolute;
-    margin-top: 719px; /* 기본 로그인 세로 위치 */
-    margin-left: 150px;
-}
-
-.ImgButtonWrap {
-    width: 220px;
-
-    margin-bottom: 482px; /* 구글 버튼 세로 위치 */
-}
-
-
-
-.ImgButton {
-
-    width: 250px;
-    height: 64px;
-
-    cursor: pointer;
-}
-
-
-
