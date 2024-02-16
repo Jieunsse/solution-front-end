@@ -1,15 +1,18 @@
 import styles from './SignUp.module.css';
-import { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../Firebase/firebase.js';
-
+import { atom, useAtom } from 'jotai';
+import { emailAtom, passwordAtom, errorAtom} from "../Atoms/Atoms.js";
+// import { useState } from 'react';
 
 const SignUp = () => {
 
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+
+
+    const [email, setEmail] = useAtom(emailAtom);
+    const [password, setPassword] = useAtom(passwordAtom);
     // const [newAccount, setNewAccount] = useState(true);
-    const [error, setError] = useState('');
+    const [error, setError] = useAtom(errorAtom);
 
     // const toggleAccount = () => setNewAccount((prev) => !prev)
     const onChange = (e) => {

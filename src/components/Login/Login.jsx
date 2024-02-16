@@ -1,12 +1,12 @@
 import styles from './Login.module.css';
 import { auth } from '../../Firebase/firebase.js';
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import { useState } from 'react';
-
+import { useAtom } from 'jotai';
+import { userDataAtom } from "../Atoms/Atoms.js";
 
 const Login = () => {
 
-    const [userData, setUserData] = useState(null);
+    const [userData, setUserData] = useAtom(userDataAtom);
 
     const handleSignIn = () => {
         const provider = new GoogleAuthProvider();
@@ -27,9 +27,7 @@ const Login = () => {
         <div className={styles.page}>
 
             <div className={styles.titleWrap}>
-                지금 이 자리에
-                <br/>
-                로고가 들어갈 예정이에요.
+                <img src="src/assets/Logo.svg" alt="LOGO"/>
             </div>
 
             <div className={styles.contentWrap}>
