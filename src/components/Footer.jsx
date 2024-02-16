@@ -13,7 +13,7 @@ function Footer() {
 
   return (
     <footer
-      className="fixed bottom-0 max-w-md w-full flex justify-between items-center p-5"
+      className="fixed bottom-0 max-w-[500px] w-full flex justify-between items-center p-5"
       style={{ backgroundColor: '#E4E4E4' }}
     >
       <FaBars className="text-gray-600 cursor-pointer" />

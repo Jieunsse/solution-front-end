@@ -26,12 +26,12 @@ function Navbar() {
   };
 
   return (
-    <nav className="flex top-0 items-center h-12 fixed w-full max-w-md bg-white">
-      <FaBars onClick={handleShow} className="w-12 h-5 absolute" />
+    <nav className="flex fixed top-0 items-center p-5 w-full max-w-[500px] flex-1 z-1 bg-white">
+      <FaBars onClick={handleShow} className="w-12 h-5 absolute left-5" />
       {isOpen && (
         <div
           ref={menuRef}
-          className="absolute top-10 left-3 flex flex-col w-32 gap-2"
+          className="absolute top-16 left-5 flex flex-col w-32 gap-2"
         >
           <Link
             to="/noticeBoard"
@@ -51,6 +51,9 @@ function Navbar() {
       )}
       <Link to="/" className="flex justify-center flex-1">
         <img src={logo} />
+      </Link>
+      <Link to="/login" className="absolute flex right-3 ">
+        <button>로그인</button>
       </Link>
     </nav>
   );
