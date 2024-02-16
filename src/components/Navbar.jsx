@@ -53,7 +53,7 @@ function Navbar() {
         <img src={logo} />
       </Link>
       <Link to="/login" className="absolute flex right-3 ">
-        <button>로그인</button>
+        <button>login</button>
       </Link>
     </nav>
   );
