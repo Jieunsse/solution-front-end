@@ -55,6 +55,7 @@ const SignUp = () => {
                     <input type="submit" value={"SignUp"} className={styles.signUpButton}/>
                 </div>
 
+
             </form>
         </div>
     );
