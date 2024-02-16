@@ -31,21 +31,21 @@ function Navbar() {
       {isOpen && (
         <div
           ref={menuRef}
-          className="absolute top-16 left-5 flex flex-col w-32 gap-2"
+          className="absolute top-16 left-5 flex flex-col w-32 gap-2 text-[14px]"
         >
           <Link
             to="/noticeBoard"
-            className="text-md border-2 pl-2 rounded-md bg-white"
+            className=" border-2 rounded-md bg-white h-12 flex justify-center items-center"
             onClick={() => setIsOpen(false)}
           >
-            📋 게시판
+            📋 Notice Board
           </Link>
           <Link
             to="/write"
-            className="border-2 pl-2 rounded-md bg-white"
+            className=" border-2 rounded-md bg-white h-12 flex justify-center items-center"
             onClick={() => setIsOpen(false)}
           >
-            📝 게시판 작성
+            📝 Write Board
           </Link>
         </div>
       )}
@@ -53,7 +53,7 @@ function Navbar() {
         <img src={logo} />
       </Link>
       <Link to="/login" className="absolute flex right-3 ">
-        <button>로그인</button>
+        <button>login</button>
       </Link>
     </nav>
   );

@@ -4,6 +4,7 @@ import NoticeBoard from '../pages/NoticeBoard';
 import NoticeBoardDetail from '../pages/NoticeBoardDetail';
 import App from '../App';
 import Home from '../pages/Home';
+import Login from '../components/Login/Login';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
         path: '/noticeBoard/detail/:id',
         element: <NoticeBoardDetail />,
       },
+      {
+        path: '/login', 
+        element: <Login></Login>
+      }
     ],
   },
 ]);
