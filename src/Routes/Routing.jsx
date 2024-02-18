@@ -5,6 +5,8 @@ import NoticeBoardDetail from '../pages/NoticeBoardDetail';
 import App from '../App';
 import Home from '../pages/Home';
 import Login from '../components/Login/Login';
+import Loading from '../components/Loading/Loading';
+import SignUp from '../components/SignUp/SignUp';
 
 const router = createBrowserRouter([
   {
@@ -12,6 +14,18 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <Home /> },
+      {
+        path: '/load',
+        element: <Loading />,
+      },
+      {
+        path: '/login/signup',
+        element: <SignUp />,
+      },
+      {
+        path: '/login',
+        element: <Login />,
+      },
       {
         path: '/write',
         element: <BoardWrite />,
@@ -25,9 +39,9 @@ const router = createBrowserRouter([
         element: <NoticeBoardDetail />,
       },
       {
-        path: '/login', 
-        element: <Login></Login>
-      }
+        path: '/login',
+        element: <Login></Login>,
+      },
     ],
   },
 ]);

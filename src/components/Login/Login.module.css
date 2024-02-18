@@ -1,108 +1,80 @@
 .page {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    max-width: 500px;
-    padding: 0 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 500px;
+  padding: 0 20px;
 
-    left: 50%;
-    transform: translate(-50%, 0%);
-    background-color: #f7f7f7;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: #f7f7f7;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    display: flex;
-    flex-direction: column;
-
-
+  display: flex;
+  flex-direction: column;
 }
 
 .titleWrap {
-    margin-top: 80%;
-    margin-left: 80px;
+  margin-top: 50%;
+  margin-left: 80px;
+  margin-inline: auto;
 }
 
 .contentWrap {
-    margin-top: 10%;
-    flex: 1;
+  margin-top: 7%;
 }
 
-.inputIdTitle{
-    font-size: 12px;
-    font-weight: 600;
-    color: #262626;
+.inputIdTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #262626;
 }
 
 .inputPwdTitle {
-    font-size: 12px;
-    font-weight: 600;
-    color: #262626;
-    margin-top: 26px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #262626;
+  padding-top: 10px;
 }
 
 .inputWrap {
-    display: flex;
-    border-radius: 8px;
-    padding: 16px;
-    margin-top: 8px;
-    background-color: white;
-    border: 1px solid #e2e0c0;
+  display: flex;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 8px;
+  background-color: white;
+  border: 1px solid #e2e0c0;
 }
 
 .inputWrap:focus-within {
-   border: 1px solid #1876fb;
+  border: 1px solid #1876fb;
 }
 
 .input {
-    width: 100%;
-    outline: none;
-    border: none;
-    height: 17px;
-    font-size: 14px;
-    font-weight: 400;
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 17px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .input::placeholder {
-    color: #dadada;
+  color: #dadada;
 }
-
 
 .signInButton {
-    width: 230px;
-    height: 46px;
-    border: none;
-    font-weight: 700;
-    background-color: #4285F4;
-    margin-bottom: 16px;
-    margin-left: 85px;
-    cursor: pointer;
-    border-radius: 3px;
-    color: white;
+  width: 140px;
+  height: 46px;
+  border: none;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  background-color: #4285f4;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 3px;
+  color: white;
 }
-
-
-.ButtonWrap {
-    position: absolute;
-    margin-top: 719px; /* 기본 로그인 세로 위치 */
-    margin-left: 150px;
-}
-
-.ImgButtonWrap {
-    width: 220px;
-
-    margin-bottom: 482px; /* 구글 버튼 세로 위치 */
-}
-
-
-
-.ImgButton {
-
-    width: 250px;
-    height: 64px;
-
-    cursor: pointer;
-}
-
-
-
