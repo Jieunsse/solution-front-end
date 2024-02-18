@@ -1,14 +1,15 @@
 import styles from './SignUp.module.css';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../Firebase/firebase.js';
-import { atom, useAtom } from 'jotai';
+import { useAtom } from 'jotai';
 import Logo from '../../../public/logo.svg';
 import { emailAtom, passwordAtom, errorAtom } from '../Atoms/Atoms.js';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Modal from '../Modal';
 import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
+  const [name, setName] = useState('');
   const [email, setEmail] = useAtom(emailAtom);
   const [password, setPassword] = useAtom(passwordAtom);
   const [error, setError] = useAtom(errorAtom);
@@ -23,6 +24,7 @@ const SignUp = () => {
     } = e;
     if (name === 'email') setEmail(value);
     else if (name === 'password') setPassword(value);
+    else if (name === 'name') setName(value);
   };
 
   const onSubmit = async (e) => {
@@ -58,6 +60,19 @@ const SignUp = () => {
       </div>
 
       <form onSubmit={onSubmit}>
+        <div className={styles.inputIdTitle}>Name</div>
+        <div className={styles.inputWrap}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+            value={name}
+            onChange={onChange}
+            className={styles.input}
+          />
+        </div>
+
         <div className={styles.inputIdTitle}>ID</div>
         <div className={styles.inputWrap}>
           <input

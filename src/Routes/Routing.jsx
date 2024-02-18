@@ -7,6 +7,7 @@ import Home from '../pages/Home';
 import Login from '../components/Login/Login';
 import Loading from '../components/Loading/Loading';
 import SignUp from '../components/SignUp/SignUp';
+import RecruitingBoard from '../pages/RecruitingBoard';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: '/write',
         element: <BoardWrite />,
+      },
+      {
+        path: '/recruit',
+        element: <RecruitingBoard />,
       },
       {
         path: '/noticeBoard',

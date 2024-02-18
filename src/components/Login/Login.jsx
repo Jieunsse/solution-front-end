@@ -25,7 +25,12 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password,
+      );
+      setUserData(userCredential.user);
       setMessage('Login success');
       setShowModal(true);
       setTimeout(() => {

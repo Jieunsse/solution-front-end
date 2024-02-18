@@ -1,19 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Logo from '../public/logo.svg';
 import './styles/normalize.css';
 import { Outlet } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsLoading(false);
-      navigate('/login');
     }, 2000);
 
     return () => clearTimeout(timeout);
