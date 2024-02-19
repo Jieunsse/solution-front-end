@@ -104,12 +104,7 @@ function Navbar() {
                 ? userData.displayName
                 : userData.email.split('@')[0]}
             </div>
-            <img
-              onClick={handleLogout}
-              src={LoginIcon}
-              alt="logout"
-              className="w-10 border-4"
-            />
+            <img onClick={handleLogout} src={LoginIcon} alt="logout" />
           </div>
         ) : (
           <Link to="/login">
