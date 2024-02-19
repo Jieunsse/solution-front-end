@@ -1,15 +1,22 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../public/logo.svg';
 import { FaBars } from 'react-icons/fa';
 import { useState, useEffect, useRef } from 'react';
 import { useAtom } from 'jotai';
 import { userDataAtom } from './Atoms/Atoms';
 import CryptoJS from 'crypto-js';
+import LoginIcon from '../../public/login.svg';
+import User from '../../public/user.svg';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const [userData, setUserData] = useAtom(userDataAtom);
+  const navigate = useNavigate();
+
+  const handleMove = () => {
+    navigate();
+  };
 
   useEffect(() => {
     const storedUserData = localStorage.getItem('userData');
@@ -83,14 +90,30 @@ function Navbar() {
       </Link>
       <div className="absolute flex right-3 ">
         {userData ? (
-          <>
-            Hello:{userData.displayName ? userData.displayName : userData.email}
-            <img src={userData.photoURL} className="w-5 h-5" alt="user" />
-            <button onClick={handleLogout}>logout</button>
-          </>
+          <div className="flex gap-4">
+            <div
+              className="flex flex-col justify-center items-center"
+              onClick={handleMove}
+            >
+              <img
+                src={userData.photoURL ? userData.photoURL : User}
+                className="w-8 h-8 rounded-full"
+                alt="user"
+              />
+              {userData.displayName
+                ? userData.displayName
+                : userData.email.split('@')[0]}
+            </div>
+            <img
+              onClick={handleLogout}
+              src={LoginIcon}
+              alt="logout"
+              className="w-10 border-4"
+            />
+          </div>
         ) : (
           <Link to="/login">
-            <button>login</button>
+            <img src={LoginIcon} alt="login" />
           </Link>
         )}
       </div>

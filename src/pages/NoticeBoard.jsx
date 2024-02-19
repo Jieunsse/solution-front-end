@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 import db from '../Firebase/firebase';
 import { useAtom } from 'jotai';
 import { userDataAtom } from '../components/Atoms/Atoms';
+import Trash from '../../public/trash.svg';
 
 function NoticeBoard() {
   const [loading, setLoading] = useState(true);
@@ -52,30 +53,36 @@ function NoticeBoard() {
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <ul className="flex flex-col gap-1 mt-12">
+        <ul className="flex flex-col gap-1 mt-12 flex-1">
           {noticeBoardData.map((item) => (
             <li
               key={item.id}
-              className="border rounded-md w-11/12 m-auto h-20 flex"
+              className="border rounded-md w-11/12 m-auto h-20 flex flex-1"
               style={{ backgroundColor: '#E4E4E4' }}
             >
               <Link
                 to={`/noticeBoard/detail/${item.id}`}
-                className="rounded-lg"
+                className="rounded-lg flex justify-between items-center w-full px-4"
               >
-                <h2 className="text-xl font-semibold line-clamp-1">
-                  Title: {item.title}
-                </h2>
-                <p className="text-gray-600">
-                  Duration: {item.startDate} ~ {item.endDate}
-                </p>
-                <p className="text-gray-600 line-clamp-1">
-                  Content: {item.mainContent}
-                </p>
+                <div>
+                  <h2 className="text-xl font-semibold line-clamp-1">
+                    Title: {item.title}
+                  </h2>
+                  <p className="text-gray-600">
+                    Duration: {item.startDate} ~ {item.endDate}
+                  </p>
+                  <p className="text-gray-600 line-clamp-1">
+                    Content: {item.mainContent}
+                  </p>
+                </div>
+                {userData && userData.uid === item.authorId && (
+                  <img
+                    onClick={() => handleDelete(item.id)}
+                    src={Trash}
+                    className="cursor-pointer w-4 justify-self-end"
+                  />
+                )}
               </Link>
-              {userData && userData.uid === item.authorId && (
-                <button onClick={() => handleDelete(item.id)}>Delete</button>
-              )}
             </li>
           ))}
         </ul>
