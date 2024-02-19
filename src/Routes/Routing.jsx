@@ -10,6 +10,7 @@ import SignUp from '../components/SignUp/SignUp';
 import RecruitingBoard from '../pages/RecruitingBoard';
 import RecruitingBoardDetail from '../pages/RecruitingBoardDetail';
 import MyPage from '../components/MyPage/MyPage.jsx';
+import Decks from '../components/Decks/Decks.jsx';
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: '/MyPage',
         element: <MyPage></MyPage>,
+      },
+      {
+        path: 'Cards',
+        element: <Decks></Decks>,
       }
     ],
   },
