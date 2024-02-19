@@ -9,6 +9,7 @@ import Loading from '../components/Loading/Loading';
 import SignUp from '../components/SignUp/SignUp';
 import RecruitingBoard from '../pages/RecruitingBoard';
 import RecruitingBoardDetail from '../pages/RecruitingBoardDetail';
+import MyPage from '../components/MyPage/MyPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
         path: '/login',
         element: <Login></Login>,
       },
+      {
+        path: '/MyPage',
+        element: <MyPage></MyPage>,
+      }
     ],
   },
 ]);

@@ -1,0 +1,24 @@
+.ButtonWrap {
+    margin-top: 300px;
+    margin-left: 130px;
+}
+
+.signUpButton {
+    width: 230px;
+    height: 46px;
+    border: none;
+    font-weight: 700;
+    justify-content: center;
+    background-color: #4285f4;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+}
+
+.title {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+}

@@ -5,7 +5,8 @@ import { useState, useEffect, useRef } from 'react';
 import { useAtom } from 'jotai';
 import { userDataAtom } from './Atoms/Atoms';
 import CryptoJS from 'crypto-js';
-import LoginIcon from '../../public/login.svg';
+import NavLogin from '../assets/NavbarLogin/NavLogin.svg';
+import NavLogOut from '../assets/NavbarLogin/NavLogOut.svg';
 import User from '../../public/user.svg';
 
 function Navbar() {
@@ -88,8 +89,10 @@ function Navbar() {
       <Link to="/" className="flex justify-center flex-1">
         <img src={logo} />
       </Link>
-      <div className="absolute flex right-3 ">
+
+      <div className="absolute flex right-3">
         {userData ? (
+          <Link to="/MyPage">
           <div className="flex gap-4">
             <div
               className="flex flex-col justify-center items-center"
@@ -104,14 +107,19 @@ function Navbar() {
                 ? userData.displayName
                 : userData.email.split('@')[0]}
             </div>
-            <img onClick={handleLogout} src={LoginIcon} alt="logout" />
+            <Link to="/">
+            <img onClick={handleLogout} src={NavLogOut} alt="logout" />
+            </Link>
+
           </div>
+          </Link>
         ) : (
           <Link to="/login">
-            <img src={LoginIcon} alt="login" />
+            <img src={NavLogin} alt="login" />
           </Link>
         )}
       </div>
+
     </nav>
   );
 }
