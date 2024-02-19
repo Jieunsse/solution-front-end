@@ -8,7 +8,7 @@ const Cards = ({title, due, location, img }) => {
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <p className="text-l uppercase font-bold mb-2">{location}</p>
         <small className="text-default-500 mb-6">{due}</small>
-        <h4 className="font-bold text-xl">{title}</h4>
+        <h4 className="font-bold text-base text-left">{title}</h4>
       </CardHeader>
       <CardBody className="overflow-visible py-2">
         <Image
