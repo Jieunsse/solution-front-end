@@ -4,9 +4,10 @@ import { useAtom } from 'jotai';
 import { useState } from 'react';
 import Modal from '../Modal';
 import { useNavigate } from 'react-router-dom';
-import { errorAtom } from '../Atoms/Atoms.js';
+import { errorAtom, userDataAtom } from '../Atoms/Atoms.js';
 import styles from './MyPage.module.css';
 const MyPage = () => {
+  const [userData, setUserData] = useAtom(userDataAtom);
   const [error, setError] = useAtom(errorAtom);
   const [message, setMessage] = useState('');
   const [showModal, setShowModal] = useState(false);
@@ -19,6 +20,7 @@ const MyPage = () => {
       await deleteUser(auth.currentUser); // Delete the currently signed-in user
       setMessage('Account successfully deleted.');
       setShowModal(true);
+      setUserData(null);
       setTimeout(() => {
         navigate('/'); // Redirect to home page after successful deletion
       }, 2000);
