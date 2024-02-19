@@ -22,12 +22,10 @@ const Decks = () => {
     pageNumbers.push(i);
   }
 
-  const cardsData = CardsInfo;
-
   return (
-    <div className="mt-8 mx-2">
+    <div className="mt-20 mx-2">
       <div className="grid grid-cols-2 gap-4">
-        {cardsData.slice(indexOfFirstCard, indexOfLastCard).map((cardInfo, index) => (
+        {CardsInfo.slice(indexOfFirstCard, indexOfLastCard).map((cardInfo, index) => (
           <Cards
             key={indexOfFirstCard + index}
             title={cardInfo.title}
