@@ -8,6 +8,7 @@ import Login from '../components/Login/Login';
 import Loading from '../components/Loading/Loading';
 import SignUp from '../components/SignUp/SignUp';
 import RecruitingBoard from '../pages/RecruitingBoard';
+import RecruitingBoardDetail from '../pages/RecruitingBoardDetail';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: '/recruit',
         element: <RecruitingBoard />,
+      },
+      {
+        path: '/recruit/detail/:id',
+        element: <RecruitingBoardDetail />,
       },
       {
         path: '/noticeBoard',

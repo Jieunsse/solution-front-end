@@ -17,7 +17,7 @@ function Card() {
         {currentItems.map((item) => (
           <Link
             key={item.id}
-            to={`#${item.id}`} // Link 컴포넌트에 to 속성 추가
+            to={`/recruit/detail/${item.id}`}
             className="w-11/12 m-auto p-2 rounded-md block"
             style={{ backgroundColor: '#E4E4E4', textDecoration: 'none' }}
           >
