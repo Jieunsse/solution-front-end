@@ -110,7 +110,6 @@ function Navbar() {
             <Link to="/">
             <img onClick={handleLogout} src={NavLogOut} alt="logout" />
             </Link>
-
           </div>
           </Link>
         ) : (
