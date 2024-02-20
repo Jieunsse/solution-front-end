@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 import db from '../Firebase/firebase';
 import { useAtom } from 'jotai';
 import { userDataAtom } from '../components/Atoms/Atoms';
-import Trash from '../../public/trash.svg';
+import Trash from '../assets/icons/trash.svg';
 import { Card, CardHeader, CardBody, CardFooter, Divider, Image, Button } from "@nextui-org/react";
 
 function NoticeBoard() {
