@@ -7,7 +7,6 @@ import Home from '../pages/Home';
 import Login from '../components/Login/Login';
 import Loading from '../components/Loading/Loading';
 import SignUp from '../components/SignUp/SignUp';
-import RecruitingBoard from '../pages/RecruitingBoard';
 import RecruitingBoardDetail from '../pages/RecruitingBoardDetail';
 import MyPage from '../components/MyPage/MyPage.jsx';
 import Decks from '../components/Decks/Decks.jsx';
@@ -36,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/recruit',
-        element: <RecruitingBoard />,
+        element: <Decks />,
       },
       {
         path: '/recruit/detail/:id',
@@ -52,16 +51,12 @@ const router = createBrowserRouter([
       },
       {
         path: '/login',
-        element: <Login></Login>,
+        element: <Login />,
       },
       {
         path: '/MyPage',
-        element: <MyPage></MyPage>,
+        element: <MyPage/>,
       },
-      {
-        path: 'Cards',
-        element: <Decks></Decks>,
-      }
     ],
   },
 ]);
