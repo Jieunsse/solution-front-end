@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 import db from '../Firebase/firebase';
 import { useAtom } from 'jotai';
 import { userDataAtom } from '../components/Atoms/Atoms';
-import Trash from '../../public/trash.svg';
+import Trash from '../assets/icons/trash.svg';
 import { Card, CardHeader, CardBody, CardFooter, Divider, Image, Button } from "@nextui-org/react";
 
 function NoticeBoard() {
@@ -93,7 +93,7 @@ function NoticeBoard() {
                 </p>
               </CardBody>
               <Divider />
-              <CardFooter >
+              <CardFooter className="flex justify-between">
                 <Button color="primary">
                   <Link to={`/noticeBoard/detail/${item.id}`}>View Details</Link>
                 </Button>
@@ -101,7 +101,7 @@ function NoticeBoard() {
                   <img
                     onClick={() => handleDelete(item.id)}
                     src={Trash}
-                    className="cursor-pointer w-4 justify-self-end"
+                    className="cursor-pointer w-8 justify-items-end"
                     alt="trash"
                   />
                 )}
