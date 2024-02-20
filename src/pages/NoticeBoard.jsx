@@ -12,6 +12,7 @@ import db from '../Firebase/firebase';
 import { useAtom } from 'jotai';
 import { userDataAtom } from '../components/Atoms/Atoms';
 import Trash from '../../public/trash.svg';
+import { Card, CardHeader, CardBody, CardFooter, Divider, Image, Button } from "@nextui-org/react";
 
 function NoticeBoard() {
   const [loading, setLoading] = useState(true);
@@ -53,39 +54,61 @@ function NoticeBoard() {
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <ul className="flex flex-col gap-1 mt-12 flex-1">
+        <div className="flex flex-col gap-1 mt-12 flex-1 mb-4">
+
+          <div className="flex justify-center items-center">
+          <Card className="w-40">
+            <CardBody className="text-center">
+              <p className="text-bold text-lg">📢 Notice</p>
+            </CardBody>
+          </Card>
+          </div>
+
+
           {noticeBoardData.map((item) => (
-            <li
-              key={item.id}
-              className="border rounded-md w-11/12 m-auto h-20 flex flex-1"
-              style={{ backgroundColor: '#E4E4E4' }}
-            >
-              <Link
-                to={`/noticeBoard/detail/${item.id}`}
-                className="rounded-lg flex justify-between items-center w-full px-4"
-              >
-                <div>
-                  <h2 className="text-xl font-semibold line-clamp-1">
-                    Title: {item.title}
-                  </h2>
-                  <p className="text-gray-600">
-                    Duration: {item.startDate} ~ {item.endDate}
-                  </p>
-                  <p className="text-gray-600 line-clamp-1">
-                    Content: {item.mainContent}
-                  </p>
+            <Card key={item.id} className="mt-10">
+              <CardHeader className="flex gap-3">
+                <Image
+                  alt="nextui logo"
+                  height={40}
+                  radius="sm"
+                  src="src/assets/miniLogo/miniLogo.svg"
+                  width={40}
+                />
+                <div className="flex flex-col">
+                  <p className="text-md">The Volunteers</p>
+                  <p className="text-small text-default-500">Official</p>
                 </div>
+              </CardHeader>
+              <Divider />
+              <CardBody>
+                <h2 className="text-xl font-semibold line-clamp-1">
+                  Title: {item.title}
+                </h2>
+                <p className="text-default-500 text-sm mb-2">
+                  Duration: {item.startDate} ~ {item.endDate}
+                </p>
+                <p className="text-gray-600 line-clamp-1 mt-2">
+                  Content: {item.mainContent}
+                </p>
+              </CardBody>
+              <Divider />
+              <CardFooter >
+                <Button color="primary">
+                  <Link to={`/noticeBoard/detail/${item.id}`}>View Details</Link>
+                </Button>
                 {userData && userData.uid === item.authorId && (
                   <img
                     onClick={() => handleDelete(item.id)}
                     src={Trash}
                     className="cursor-pointer w-4 justify-self-end"
+                    alt="trash"
                   />
                 )}
-              </Link>
-            </li>
+              </CardFooter>
+            </Card>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
