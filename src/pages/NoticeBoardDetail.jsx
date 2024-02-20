@@ -107,8 +107,7 @@ function DetailPage() {
   }
 
   return (
-    <div className="max-w-md max-h-screen pl-4">
-      <h1 className="text-2xl font-bold">{postData.title}</h1>
+    <div className="max-w-md mx-auto mt-40 px-4 ml-28">
       <div className="mb-4">
         <h1>Title: {postData.title}</h1>
         <p className="mb-2">
