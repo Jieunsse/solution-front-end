@@ -1,9 +1,9 @@
 import Cards from '../Card/Cards.jsx';
 import { useState } from 'react';
-import { CardsInfo } from '../../data/CardsData.js';
+import data from '../../data/data.json';
+// import { CardsInfo } from '../../data/CardsData.js'
 
 const Decks = () => {
-
   const [currentPage, setCurrentPage] = useState(1); // 현재 페이지 상태
   const cardsPerPage = 6; // 페이지 당 카드 수
   const totalCards = 15; // 전체 카드 수
@@ -23,15 +23,16 @@ const Decks = () => {
   }
 
   return (
-    <div className="mt-20 mx-2">
+    <div className="mt-4 mx-2">
       <div className="grid grid-cols-2 gap-4">
-        {CardsInfo.slice(indexOfFirstCard, indexOfLastCard).map((cardInfo, index) => (
+        {data.slice(indexOfFirstCard, indexOfLastCard).map((data, index) => (
           <Cards
-            key={indexOfFirstCard + index}
-            title={cardInfo.title}
-            due={cardInfo.due}
-            location={cardInfo.location}
-            img={cardInfo.img}
+            key={index}
+            id={data.id} // id prop 전달
+            title={data.title}
+            period={data.period}
+            place={data.place}
+            img={data.img}
           />
         ))}
       </div>

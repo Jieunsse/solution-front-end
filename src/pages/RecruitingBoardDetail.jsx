@@ -1,20 +1,35 @@
 import { useParams } from 'react-router-dom';
-import datas from '../data/data.json';
+import data from '../data/data.json';
+import { Card, CardBody, CardFooter, Divider} from '@nextui-org/react';
 
 const RecruitingBoardDetail = () => {
   const { id } = useParams();
 
-  const selectedItem = datas.find((item) => item.id === id);
+  const selectedItem = data.find((item) => item.id === id);
 
   if (!selectedItem) return <div>Item not found</div>;
 
   return (
     <div>
-      <h1 className="text-[24px]">{selectedItem.title}</h1>
-      <p>Activity Period: {selectedItem.period}</p>
-      <p>Activity Area: {selectedItem.field}</p>
-      <p>{selectedItem.place}</p>
-      <p>{selectedItem['meeting date']}</p>
+      <Card className="text-lg mb-20 text-center p-4 mt-20">
+        {selectedItem.title}
+      </Card>
+
+      <Card>
+        <CardBody>
+          <p className="mt-2 mb-4">Place : {selectedItem.place}</p>
+          <p className="mb-2">Activity Period: {selectedItem.period}</p>
+          <p className="mt-2 mb-4">Date : {selectedItem['meeting date']}</p>
+          <p className="mb-2">Activity Area: {selectedItem.field}</p>
+          <p className="mt-2 mb-2">Required : {selectedItem.required}</p>
+        </CardBody>
+
+        <Divider />
+
+        <CardFooter className="mt-4 mb-4">
+        </CardFooter>
+
+      </Card>
     </div>
   );
 };

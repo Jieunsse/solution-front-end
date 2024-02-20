@@ -7,7 +7,8 @@
     "period": "2024-02-15 ~ 2024-12-31",
     "management center": "Seonlin Comprehensive Social Welfare Center",
     "field": "Community Volunteer Work",
-    "meeting date": "Regular"
+    "meeting date": "Regular",
+    "img": "src/assets/CardImg/Vol01.jpg"
   },
   {
     "place": "Seoul",
@@ -17,7 +18,8 @@
     "period": "2024-02-15 ~ 2024-12-31",
     "management center": "Korea Visionary Welfare Foundation",
     "field": "Other Volunteer Work",
-    "meeting date": "Regular"
+    "meeting date": "Regular",
+    "img": "src/assets/CardImg/Vol02.jpg"
   },
   {
     "place": "Seoul",
@@ -27,7 +29,8 @@
     "period": "2024-02-15 ~ 2024-12-31",
     "management center": "Yurin Wonkwang Comprehensive Social Welfare Center",
     "field": "Other Volunteer Work",
-    "meeting date": "Irregular"
+    "meeting date": "Irregular",
+    "img": "src/assets/CardImg/Vol03.jpg"
   },
   {
     "place": "Gyeonggi",
@@ -37,7 +40,8 @@
     "period": "2024-02-15 ~ 2024-12-31",
     "management center": "Inbon Elderly Welfare Center",
     "field": "Home Volunteer Work",
-    "meeting date": "Regular"
+    "meeting date": "Regular",
+    "img": "src/assets/CardImg/Vol04.jpg"
   },
   {
     "place": "Gyeonggi",
@@ -47,7 +51,8 @@
     "period": "2024-02-15 ~ 2025-12-31",
     "management center": "Seoul Metropolitan Baegam Mental Hospital",
     "field": "Facility Volunteer Work",
-    "meeting date": "Regular"
+    "meeting date": "Regular",
+    "img": "src/assets/CardImg/Vol05.jpg"
   },
   {
     "place": "Seoul",
@@ -57,7 +62,8 @@
     "period": "2024-02-15 ~ 2024-12-31",
     "management center": "Gangbuk Disabled Comprehensive Welfare Center",
     "field": "Home Volunteer Work",
-    "meeting date": "Regular"
+    "meeting date": "Regular",
+    "img": "src/assets/CardImg/Vol06.jpg"
   },
   {
     "place": "Seoul",
@@ -67,7 +73,8 @@
     "period": "2024-02-15 ~ 2024-12-31",
     "management center": "Scroll Line",
     "field": "Facility Volunteer Work",
-    "meeting date": "Regular"
+    "meeting date": "Regular",
+    "img": "src/assets/CardImg/Vol07.jpg"
   },
   {
     "place": "Busan",
@@ -77,7 +84,8 @@
     "period": "2024-02-15 ~ 2025-02-28",
     "management center": "Hopeful People Corporation",
     "field": "Facility Volunteer Work",
-    "meeting date": "Regular"
+    "meeting date": "Regular",
+    "img": "src/assets/CardImg/Vol08.jpg"
   },
   {
     "place": "Busan",
@@ -87,7 +95,8 @@
     "period": "2024-02-15 ~ 2025-02-28",
     "management center": "Hopeful People Corporation",
     "field": "Facility Volunteer Work",
-    "meeting date": "Regular"
+    "meeting date": "Regular",
+    "img": "src/assets/CardImg/Vol09.jpg"
   },
   {
     "place": "Seoul",
@@ -97,7 +106,8 @@
     "period": "2024-02-15 ~ 2025-02-28",
     "management center": "Dongjak Daycare Center",
     "field": "Facility Volunteer Work",
-    "meeting date": "Regular"
+    "meeting date": "Regular",
+    "img": "src/assets/CardImg/Vol10.jpg"
   },
   {
     "place": "Gangwon",
@@ -107,7 +117,8 @@
     "period": "2024-02-15 ~ 2024-02-26",
     "management center": "Wonju City Family Center",
     "field": "Facility Volunteer Work",
-    "meeting date": "Irregular"
+    "meeting date": "Irregular",
+    "img": "src/assets/CardImg/Vol11.jpg"
   },
   {
     "place": "Busan",
@@ -117,7 +128,8 @@
     "period": "2024-02-15 ~ 2024-12-31",
     "management center": "Molundae Comprehensive Social Welfare Center",
     "field": "Facility Volunteer Work - Life Support (Meals, Baths, Laundry, Care, Beauty, etc.)",
-    "meeting date": "Irregular"
+    "meeting date": "Irregular",
+    "img": "src/assets/CardImg/Vol12.jpg"
   },
   {
     "place": "Gyeonggi",
@@ -127,7 +139,8 @@
     "period": "2024-02-15 ~ 2024-12-31",
     "management center": "Pyeongtaek Namboo Elderly Welfare Center",
     "field": "Facility Volunteer Work - Other (Facility Volunteer Work)",
-    "meeting date": "Irregular [Weekdays]"
+    "meeting date": "Irregular [Weekdays]",
+    "img": "src/assets/CardImg/Vol12.jpg"
   },
   {
     "place": "Seoul",
@@ -137,7 +150,8 @@
     "period": "2024-02-15 ~ 2024-02-29",
     "management center": "Seongbuk Vision Welfare Corporation",
     "field": "Facility Volunteer Work - Educational Support (Learning Guidance, etc.)",
-    "meeting date": "Regular [Once a week]"
+    "meeting date": "Regular [Once a week]",
+    "img": "src/assets/CardImg/Vol14.jpg"
   },
   {
     "place": "Busan",
@@ -147,6 +161,7 @@
     "period": "2024-02-15 ~ 2025-02-28",
     "management center": "Hopeful People Corporation",
     "field": "Facility Volunteer Work - Educational Support (Learning Guidance, etc.)",
-    "meeting date": "Regular [Once a week]"
+    "meeting date": "Regular [Once a week]",
+    "img": "src/assets/CardImg/Vol15.jpg"
   }
 ]
