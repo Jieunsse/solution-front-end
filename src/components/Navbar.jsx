@@ -56,8 +56,8 @@ function Navbar() {
   }, [userData]);
 
   return (
-    <nav className="flex fixed top-0 items-center p-5 w-full max-w-[500px] flex-1 z-1 bg-white">
-      <FaBars onClick={handleShow} className="w-14 h-5 absolute left-5" />
+    <nav className="flex top-0 items-center p-5 w-full max-w-[500px] flex-1 z-1 bg-white fixed z-50">
+      <FaBars onClick={handleShow} className="w-14 h-5 absolute left-5 " />
       {isOpen && (
         <div
           ref={menuRef}
@@ -79,7 +79,7 @@ function Navbar() {
           </Link>
           <Link
             to="/recruit"
-            className=" border-2 rounded-md bg-white h-12 flex justify-center items-center z-10"
+            className=" border-2 rounded-md bg-white h-12 flex justify-center items-center"
             onClick={() => setIsOpen(false)}
           >
             🔖 Recruiting Board

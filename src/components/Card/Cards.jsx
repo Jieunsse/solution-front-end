@@ -10,13 +10,15 @@ const Cards = ({title, due, location, img }) => {
         <small className="text-default-500 mb-6">{due}</small>
         <h4 className="font-bold text-left">{title}</h4>
       </CardHeader>
-      <CardBody className="overflow-visible py-2 flex justify-center items-center">
+      <CardBody className="overflow-visible py-2 flex justify-center items-center ">
+        <div className="w-49 h-32 flex justify-center items-center">
         <Image
           alt="Card background"
           className="object-cover rounded-xl ml-1 mt-6 w-50 h-20"
           src={img}
-          width={200}
+          width={180}
         />
+        </div>
       </CardBody>
     </Card>
   );

@@ -3,8 +3,8 @@ import volunteers from '../../../public/volunteer.svg';
 
 const home = () => {
   return (
-    <div className="overflow-y-auto h-full">
-      <title className="flex flex-col pl-[22px]  w-[278px] pt-10">
+    <div className="overflow-y-auto h-full ">
+      <title className="flex flex-col pl-[22px]  w-[278px] pt-10 mt-40">
         <span className="text-[36px] text-gray-700">I'm Looking For:</span>
         <span className="text-[24px] text-gray-400 ml-auto">
           volunteers service
