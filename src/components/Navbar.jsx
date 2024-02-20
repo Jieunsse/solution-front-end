@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../public/logo.svg';
-import { FaBars } from 'react-icons/fa';
+// import { FaBars } from 'react-icons/fa';
 import { useState, useEffect, useRef } from 'react';
 import { useAtom } from 'jotai';
 import { userDataAtom } from './Atoms/Atoms';
@@ -8,6 +8,7 @@ import CryptoJS from 'crypto-js';
 import NavLogin from '../assets/NavbarLogin/NavLogin.svg';
 import NavLogOut from '../assets/NavbarLogin/NavLogOut.svg';
 import User from '../../public/user.svg';
+import DropMenus from './DropDown/DropMenus.jsx';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,38 +57,11 @@ function Navbar() {
   }, [userData]);
 
   return (
-    <nav className="flex top-0 items-center p-5 w-full max-w-[500px] flex-1 z-1 bg-white fixed z-50">
-      <FaBars onClick={handleShow} className="w-14 h-5 absolute left-5 " />
-      {isOpen && (
-        <div
-          ref={menuRef}
-          className="absolute top-16 left-5 flex flex-col w-32 gap-2 text-[14px]"
-        >
-          <Link
-            to="/noticeBoard"
-            className=" border-2 rounded-md bg-white h-12 flex justify-center items-center"
-            onClick={() => setIsOpen(false)}
-          >
-            📋 Notice Board
-          </Link>
-          <Link
-            to="/write"
-            className=" border-2 rounded-md bg-white h-12 flex justify-center items-center"
-            onClick={() => setIsOpen(false)}
-          >
-            📝 Write Board
-          </Link>
-          <Link
-            to="/recruit"
-            className=" border-2 rounded-md bg-white h-12 flex justify-center items-center"
-            onClick={() => setIsOpen(false)}
-          >
-            🔖 Recruiting Board
-          </Link>
-        </div>
-      )}
-      <Link to="/" className="flex justify-center flex-1">
-        <img src={logo} />
+    <nav className="flex top-0 items-center p-5 w-full max-w-[500px] flex-1 z-1 bg-white fixed">
+      <DropMenus  className="max-w-full max-h-full"/>
+
+      <Link to="/" className="flex justify-center flex-1 mr-28 pointer-events-none">
+        <img src={logo} alt="logo" className="max-w-full max-h-full pointer-events-auto" />
       </Link>
 
       <div className="absolute flex right-3">
