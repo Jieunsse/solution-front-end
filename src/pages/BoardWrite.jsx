@@ -110,8 +110,8 @@ function BoardWrite() {
   };
 
   return (
-    <div className="max-w-md pl-2">
-      <h1 className="text-md">Write Page</h1>
+    <div className="max-w-md pl-2 mt-40">
+      <h1 className="text-md text-center">Write Page</h1>
       {error && <p className="text-red-500">{error}</p>}
       <form className="flex flex-col gap-2" onSubmit={handleSubmit}>
         <FormField
@@ -145,15 +145,15 @@ function BoardWrite() {
         />
         <button
           type="submit"
-          className="rounded-md w-24 bg-blue-500 text-white h-8"
+          className="rounded-md w-24 bg-blue-500 text-white h-8 mt-4 ml-44"
         >
           Submit
         </button>
       </form>
       {isOpen && (
         <Modal
-          message="Complete."
-          title="Good Job"
+          message="Your post has been Created!"
+          title="Done!"
           onClose={() => setIsOpen(false)}
         />
       )}
@@ -172,7 +172,7 @@ function FormField({
 }) {
   if (textarea) {
     return (
-      <div>
+      <div className="flex flex-col justify-center items-center">
         <label>{label}</label>
         <textarea
           name={name}
@@ -186,7 +186,7 @@ function FormField({
   }
 
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center">
       <label>{label}</label>
       <input
         type={type}
