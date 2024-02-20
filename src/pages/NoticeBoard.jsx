@@ -57,7 +57,7 @@ function NoticeBoard() {
         <div className="flex flex-col gap-1 mt-12 flex-1 mb-4">
 
           <div className="flex justify-center items-center">
-          <Card className="w-40">
+          <Card className="w-40 mb-10">
             <CardBody className="text-center">
               <p className="text-bold text-lg">📢 Notice</p>
             </CardBody>
@@ -66,7 +66,7 @@ function NoticeBoard() {
 
 
           {noticeBoardData.map((item) => (
-            <Card key={item.id} className="mt-10">
+            <Card key={item.id} className="mt-4">
               <CardHeader className="flex gap-3">
                 <Image
                   alt="nextui logo"
