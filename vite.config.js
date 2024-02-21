@@ -7,11 +7,11 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  resolve: {
-    alias: {
-      '@nextui-org/system': 'path/to/nextui-org/system',
-    },
-  },
+  // resolve: {
+  //   alias: {
+  //     '@nextui-org/system': 'path/to/nextui-org/system',
+  //   },
+  // },
 });
 
 
