@@ -24,14 +24,14 @@ const Decks = () => {
   return (
     <div className="mt-4 mx-2">
       <div className="grid grid-cols-2 gap-4">
-        {data.slice(indexOfFirstCard, indexOfLastCard).map((data, index) => (
+        {data.slice(indexOfFirstCard, indexOfLastCard).map((cardData, index) => (
           <Cards
             key={index}
-            id={data.id}
-            title={data.title}
-            period={data.period}
-            place={data.place}
-            img={data.img}
+            id={cardData.id}
+            title={cardData.title}
+            period={cardData.period}
+            place={cardData.place}
+            img={cardData.img}
           />
         ))}
       </div>
