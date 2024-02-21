@@ -10,7 +10,7 @@ import { userDataAtom } from '../Atoms/Atoms.js';
 import Logo from '../../../public/logo.svg';
 import { useState } from 'react';
 import Modal from '../Modal.jsx';
-import GoogleLogo from '../../assets/Google/button.svg';
+import GoogleLogo from '../../../public/assets/Google/button.svg';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
