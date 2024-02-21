@@ -1,10 +1,12 @@
 import {Card, CardHeader, CardBody, Image} from '@nextui-org/react';
+import { Link } from 'react-router-dom';
 // eslint-disable-next-line react/prop-types
-const Cards = ({title, due, location, img }) => {
+const Cards = ({title, due, location, img, id }) => {
 
 
   return (
-    <Card className="py-4" isPressable onPress={() => {}}>
+    <Card className="py-4" isPressable>
+      <Link to={`/recruit/detail/${id}`}>
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <p className="text-sm font-bold uppercase  mb-2">{location}</p>
         <small className="text-default-500 mb-6">{due}</small>
@@ -20,6 +22,7 @@ const Cards = ({title, due, location, img }) => {
         />
         </div>
       </CardBody>
+      </Link>
     </Card>
   );
 }
