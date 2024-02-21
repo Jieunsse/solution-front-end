@@ -8,7 +8,7 @@
     "management center": "Seonlin Comprehensive Social Welfare Center",
     "field": "Community Volunteer Work",
     "meeting date": "Regular",
-    "img": "src/assets/CardImg/Vol01.jpg",
+    "img": "public/assets/CardImg/Vol01.jpg",
     "article": "We are looking for new staffs for  Nulpureun Library Volunteers. \n Your main job will be assistance. Please make a call if you want to join. Thanks! "
   },
   {
@@ -20,7 +20,7 @@
     "management center": "Korea Visionary Welfare Foundation",
     "field": "Other Volunteer Work",
     "meeting date": "Regular",
-    "img": "src/assets/CardImg/Vol02.jpg",
+    "img": "public/assets/CardImg/Vol02.jpg",
     "article": "We are looking for new staffs for  Nulpureun Library Volunteers. \n Your main job will be assistance. Please make a call if you want to join. Thanks!"
   },
   {
@@ -32,7 +32,7 @@
     "management center": "Yurin Wonkwang Comprehensive Social Welfare Center",
     "field": "Other Volunteer Work",
     "meeting date": "Irregular",
-    "img": "src/assets/CardImg/Vol03.jpg",
+    "img": "public/assets/CardImg/Vol03.jpg",
     "article": "We are looking for new staffs for Social Contribution Activity Care Bank! Your main job will be assistance. Please make a call if you want to join. Thanks!"
   },
   {
@@ -44,7 +44,7 @@
     "management center": "Inbon Elderly Welfare Center",
     "field": "Home Volunteer Work",
     "meeting date": "Regular",
-    "img": "src/assets/CardImg/Vol04.jpg",
+    "img": "public/assets/CardImg/Vol04.jpg",
     "article": "We are looking for new staffs for Meal Delivery volunteer! Your main job will be assistance. Please Call me if you want to join. Thanks!"
   },
   {
@@ -56,7 +56,7 @@
     "management center": "Seoul Metropolitan Baegam Mental Hospital",
     "field": "Facility Volunteer Work",
     "meeting date": "Regular",
-    "img": "src/assets/CardImg/Vol05.jpg",
+    "img": "public/assets/CardImg/Vol05.jpg",
     "article": "We are looking for new staffs for Mental Hospital Women's Ward Beauty Volunteer. Your main job will be assistance. Please make a call if you want to join. Thanks!"
   },
   {
@@ -68,7 +68,7 @@
     "management center": "Gangbuk Disabled Comprehensive Welfare Center",
     "field": "Home Volunteer Work",
     "meeting date": "Regular",
-    "img": "src/assets/CardImg/Vol06.jpg",
+    "img": "public/assets/CardImg/Vol06.jpg",
     "article": "We are looking for new staffs for Disabled Comprehensive Welfare Center! Your main job will be assistance. Please make a call if you want to join. Thanks!"
   },
   {
@@ -80,7 +80,7 @@
     "management center": "Scroll Line",
     "field": "Facility Volunteer Work",
     "meeting date": "Regular",
-    "img": "src/assets/CardImg/Vol07.jpg",
+    "img": "public/assets/CardImg/Vol07.jpg",
     "article": "We are looking for new staffs for Welfare Foundation Scroll Line Cafe Education Program Volunteer! Your main job will be assistance. Please make a call if you want to join. Thanks!"
   },
   {
@@ -92,7 +92,7 @@
     "management center": "Hopeful People Corporation",
     "field": "Facility Volunteer Work",
     "meeting date": "Regular",
-    "img": "src/assets/CardImg/Vol08.jpg",
+    "img": "public/assets/CardImg/Vol08.jpg",
     "article": "We are looking for new staffs for Learning Mentoring Teachers! Your main job will be educate children. Please make a call if you want to join. Thanks!"
   },
   {
@@ -104,7 +104,7 @@
     "management center": "Dongjak Daycare Center",
     "field": "Facility Volunteer Work",
     "meeting date": "Regular",
-    "img": "src/assets/CardImg/Vol10.jpg",
+    "img": "public/assets/CardImg/Vol10.jpg",
     "article": "We are looking for new staffs for DayCare Program Assistance! Your main job will be assistance. Please make a call if you want to join. Thanks!"
   },
   {
@@ -116,7 +116,7 @@
     "management center": "Wonju City Family Center",
     "field": "Facility Volunteer Work",
     "meeting date": "Irregular",
-    "img": "src/assets/CardImg/Vol11.jpg",
+    "img": "public/assets/CardImg/Vol11.jpg",
     "article": "We are looking for new staffs for Wonju City Family Center! Your main job will be assistance. Please make a call if you want to join. Thanks!"
   },
   {
@@ -128,7 +128,7 @@
     "management center": "Molundae Comprehensive Social Welfare Center",
     "field": "Facility Volunteer Work - Life Support (Meals, Baths, Laundry, Care, Beauty, etc.)",
     "meeting date": "Irregular",
-    "img": "src/assets/CardImg/Vol12.jpg",
+    "img": "public/assets/CardImg/Vol12.jpg",
     "article": "We are looking for Comprehensive Social Welfare Center! Your main job will be assistance. Please make a call if you want to join. Thanks!"
   },
   {
@@ -140,7 +140,7 @@
     "management center": "Pyeongtaek Namboo Elderly Welfare Center",
     "field": "Facility Volunteer Work - Other (Facility Volunteer Work)",
     "meeting date": "Irregular [Weekdays]",
-    "img": "src/assets/CardImg/Vol12.jpg",
+    "img": "public/assets/CardImg/Vol12.jpg",
     "article": "We are looking for staffs for Elderly Welfare Center! Your main job will be assistance. Please make a call if you want to join. Thanks!"
   },
   {
@@ -152,7 +152,7 @@
     "management center": "Seongbuk Vision Welfare Corporation",
     "field": "Facility Volunteer Work - Educational Support (Learning Guidance, etc.)",
     "meeting date": "Regular [Once a week]",
-    "img": "src/assets/CardImg/Vol14.jpg",
+    "img": "public/assets/CardImg/Vol14.jpg",
     "article": "We are looking for staffs for 1:1 Learning Guidance for Visually Impaired Student! Your main job will be teaching. Please make a call if you want to join. Thanks!"
   },
   {
@@ -164,7 +164,7 @@
     "management center": "Hopeful People Corporation",
     "field": "Facility Volunteer Work - Educational Support (Learning Guidance, etc.)",
     "meeting date": "Regular [Once a week]",
-    "img": "src/assets/CardImg/Vol15.jpg",
+    "img": "public/assets/CardImg/Vol15.jpg",
     "article": "We are looking for staffs for Learning Mentoring Teachers! Your main job will be teaching children. Please make a call if yo want to join. Thanks!"
   }
 ]

@@ -5,8 +5,8 @@ import { useState, useEffect, useRef } from 'react';
 import { useAtom } from 'jotai';
 import { userDataAtom } from './Atoms/Atoms';
 import CryptoJS from 'crypto-js';
-import NavLogin from '../assets/NavbarLogin/NavLogin.svg';
-import NavLogOut from '../assets/NavbarLogin/NavLogOut.svg';
+import NavLogin from '../../public/assets/NavbarLogin/NavLogin.svg';
+import NavLogOut from '../../public/assets/NavbarLogin/NavLogOut.svg';
 import User from '../../public/user.svg';
 import DropMenus from './DropDown/DropMenus.jsx';
 
