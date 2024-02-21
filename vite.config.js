@@ -6,8 +6,15 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-  }
+  },
+  resolve: {
+    alias: {
+      '@nextui-org/system': 'path/to/nextui-org/system',
+    },
+  },
 });
+
+
 
 
 
