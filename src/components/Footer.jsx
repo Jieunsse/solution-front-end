@@ -20,14 +20,14 @@ function Footer() {
       <Link to="/" className="text-gray-600 text-tiny text-center mt-2 mb-1">
         {/*<MdOutlineCheckBoxOutlineBlank />*/}
         <Image
-          src="src/assets/miniLogo/miniLogo.svg"
+          src="public/assets/miniLogo/miniLogo.svg"
           width={40}
           className="mb-1"
         />
         HOME
       </Link>
       <div className="text-tiny text-gray-600 mt-4 text-center">
-      <Image src="src/assets/icons/back.svg" onClick={goBack} className="cursor-pointer mb-2 ml-1" width={30}/>
+      <Image src="public/assets/icons/back.svg" onClick={goBack} className="cursor-pointer mb-2 ml-1" width={30}/>
         BACK
       </div>
     </footer>
