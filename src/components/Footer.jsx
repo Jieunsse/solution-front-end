@@ -27,7 +27,7 @@ function Footer() {
         HOME
       </Link>
       <div className="text-tiny text-gray-600 mt-4 text-center">
-      <Image src="public/assets/icons/back.svg" onClick={goBack} className="cursor-pointer mb-2 ml-1" width={30}/>
+      <Image src="/assets/icons/back.svg" onClick={goBack} className="cursor-pointer mb-2 ml-1" width={30}/>
         BACK
       </div>
     </footer>
