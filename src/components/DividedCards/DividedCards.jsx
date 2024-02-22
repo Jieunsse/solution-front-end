@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardBody, CardFooter, Divider, Image } from "@nextui-org/react";
 import { Link } from 'react-router-dom';
-import miniLogo from '/assets/miniLogo/miniLogo.svg';
+
 
 // eslint-disable-next-line react/prop-types
 const DividedCards = ({ noticeBoardData }) => {
@@ -11,7 +11,7 @@ const DividedCards = ({ noticeBoardData }) => {
           alt="nextui logo"
           height={40}
           radius="sm"
-          src={miniLogo}
+          src="/assets/miniLogo/miniLogo.svg"
           width={40}
         />
         <div className="flex flex-col">
