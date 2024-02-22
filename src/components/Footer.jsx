@@ -20,7 +20,7 @@ function Footer() {
       <Link to="/" className="text-gray-600 text-tiny text-center mt-2 mb-1">
         {/*<MdOutlineCheckBoxOutlineBlank />*/}
         <Image
-          src="public/assets/miniLogo/miniLogo.svg"
+          src="/assets/miniLogo/miniLogo.svg"
           width={40}
           className="mb-1"
         />
